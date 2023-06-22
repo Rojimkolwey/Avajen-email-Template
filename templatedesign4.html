@@ -41,31 +41,31 @@
         font-family: "Open Sans", sans-serif;
       }
       body {
-        margin: 0 !important;
-        background-color: #f2f7f2 !important;
+        margin: 0;
+        background-color: #f2f7f2;
       }
 
       table {
-        border-spacing: 0 !important;
+        border-spacing: 0;
       }
 
       td {
-        padding: 0 !important;
+        padding: 0;
       }
       img {
-        border: 0 !important;
+        border: 0;
       }
       .wrapper {
-        background-color: #f2f7f2 !important;
-        width: 100% !important;
-        table-layout: fixed !important;
+        background-color: #f2f7f2;
+        width: 100%;
+        table-layout: fixed;
       }
       .main {
-        background-color: #ffffff !important;
-        margin: 0 auto !important;
+        background-color: #ffffff;
+        margin: 0 auto;
         max-width: 600px !important;
-        border-spacing: 0 !important;
-        padding-bottom: 0 !important;
+        border-spacing: 0;
+        padding-bottom: 0;
       }
       .content {
         padding: 0 24px;
@@ -84,8 +84,11 @@
     </style>
   </head>
   <body>
-    <center class="wrapper">
-      <table class="main" width="100%">
+    <center class="wrapper" style="background-color: #f2f7f2">
+      <table
+        class="main"
+        style="max-width: 600px; margin: 0 auto; background-color: #ffffff"
+      >
         <!-- header-->
         <tr>
           <td align="center">
@@ -93,18 +96,17 @@
               <img
                 class="light-logo"
                 src="https://uploads-ssl.webflow.com/6491658c181cdaa42e3e0675/649182a8d9536cfdac6c72b7_Frame%2012%203.png"
-                style="width: 100%"
-                alt="floating icons"
                 width="100%"
+                alt="floating icons"
               />
               <!--[if !mso]><! -->
-              <span class="dark-logo" style="display: none">
+              <div class="dark-logo" style="display: none">
                 <img
                   src="https://uploads-ssl.webflow.com/6491658c181cdaa42e3e0675/6492aaa2379758884a56c166_Frame%2012%203.png"
                   alt="AVAJEN logo"
-                  style="width: 100%"
+                  width="100%"
                 />
-              </span>
+              </div>
               <!--<![endif]-->
             </a>
           </td>
@@ -113,7 +115,7 @@
         <!-- content-->
         <!-- heading-->
         <tr>
-          <td>
+          <td style="padding: 0 15px 0 15px">
             <table class="content">
               <tr>
                 <td width="100%">
@@ -132,17 +134,17 @@
               <!-- body-->
 
               <tr>
-                <td style="font-size: 18px; font-weight: bold; color: #197066">
-                  <p>Dear [Contact: First Name],</p>
+                <td style="font-size: 16px; font-weight: bold; color: #197066">
+                  <p>Dear [Contact: First Name]</p>
                 </td>
               </tr>
               <!-- message-->
 
               <tr>
-                <td style="font-size: 16px; font-weight: normal" width="100%">
+                <td style="font-weight: normal" width="100%">
                   <p>
-                    Your service ticket has been assigned to [Ticket: Primary
-                    Resource].
+                    Service ticket (#[Ticket: Number]) has been assigned to
+                    [Ticket: Primary Resource].
                   </p>
                 </td>
               </tr>
@@ -189,7 +191,13 @@
                   <a
                     href="https://portal.avajen.com/app/service"
                     class="button"
-                    style="color: #ffffff"
+                    style="
+                      color: #ffffff;
+                      background-color: #22568a;
+                      padding: 10px;
+                      border-radius: 5px;
+                      text-decoration: none;
+                    "
                     >Client Portal</a
                   >
                 </td>
@@ -208,6 +216,7 @@
             </tr>
           </td>
         </tr>
+
         <!-- footer-->
       </table>
       <tr>
