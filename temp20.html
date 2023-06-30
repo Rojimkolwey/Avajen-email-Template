@@ -120,93 +120,167 @@
               <tr>
                 <td width="100%">
                   <p style="font-size: 16px; font-weight: bold">
-                    [Ticket: Title]
+                    Critical Ticket Idle for 30 Minutes!
                   </p>
-                  <p style="font-size: 12px; font-weight: bold">
+                  <p style="font-size: 14px; font-weight: normal">
+                    This critical ticket  [Ticket: Number (with link)]
+                     has a first response due on [Ticket: SLA First Response Due Date/Time]
+                      (SLA: [Ticket: Service Level Agreement]) and has been idle for 30 minutes.
+                  </p>
+              
+                  
+                  
+                  <!-- <p style="font-size: 12px; font-weight: bold">
                     TICKET: [Ticket: Number]
-                  </p>
-                  <p style="font-size: 11px">
+                  </p> -->
+                  <!-- <p style="font-size: 11px">
                     <strong>Created on: </strong> [Ticket: Create Date/Time] by
                     [Ticket: Created By]
-                  </p>
+                  </p> -->
                 </td>
               </tr>
               <!-- body-->
 
-              <tr>
-                <td style="font-size: 16px; font-weight: bold; color: #197066">
-                  <p>Dear [Contact: First Name]</p>
-                </td>
-              </tr>
               <!-- message-->
+              <!-- ticket details-->
+              <div class="ticket-details">
+                <table>
+                  <h4
+                    style="
+                      background-color: #5db1db;
+                      text-align: center;
+                      padding: 0.5em;
+                    "
+                  >
+                    Ticket details
+                  </h4>
+                  <tr>
+                    <td
+                      width="300px"
+                      style="
+                        max-width: 100%;
+                        padding: 0 15px 0 15px;
+                        font-size: 14px;
+                      "
+                    >
+                      <p style="font-size: 13px;">Ticket Title: [Ticket: Title]</p>
+                      <p style="font-size: 13px;">Priority: [Ticket: Priority]</p>
+                      <p style="font-size: 13px;">Due Date: [Ticket: Due Date/Time]</p>
+                      <p style="font-size: 13px;">
+                        Resource: [Ticket: Primary Resource] ([Ticket: Primary
+                        Resource Role])
+                      </p style="font-size: 15px;">
+                      <p style="font-size: 13px;">Work Type: [Ticket: Work Type]</p>
+                    </td>
+                    <td
+                      width="300px"
+                      style="
+                        max-width: 100%;
+                        padding: 0 15px 0 15px;
+                        font-size: 15px;
+                      "
+                    >
+                      <p style="font-size: 13px;">Ticket Number: [Ticket: Number (with link)]</p>
+                      <p style="font-size: 13px;">Status: [Ticket: Status]</p>
+                      <p style="font-size: 13px;">Estimated Hours: [Ticket: Estimated Hours]</p>
+                      <p style="font-size: 13px;">Queue: [Ticket: Queue]</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!-- TICKET DESCRIPTION-->
+              <tr >
+                <td style="padding: 0 15px 0 15px;">   <h4
+                    style="
+                      background-color: #5db1db;
+                      text-align: center;
+                      padding: 0.5em;
+                      font-size: 14px;
+                    
+                    "
+                  >
+                    Ticket Description
+                  </h4>
+                  <p style="padding: 0 15px 0 15px;">[Ticket: Description]</p>
+                </td>
+              </tr>
+
+              <!-- CONFIGURATION ITEM-->
+              <tr>
+                <td style="padding: 0 15px 0 15px;">
+                    <h4
+                    style="
+                      background-color: #5db1db;
+                      text-align: center;
+                      padding: 0.5em;
+                      font-size: 14px;
+                    
+                    "
+                  >
+                  Configuration Item
+                  </h4>
+                  <p style="padding: 0 15px 0 15px;">Name: [Ticket: Configuration Item]</p>
+                  <p style="padding: 0 15px 0 15px;">Serial Number: [Ticket: Configuration Item Serial Number]</p>
+                  <p style="padding: 0 15px 0 15px;">Reference Number: [Ticket: Configuration Item Reference Number]</p>
+                </td>
+              </tr>
+
+              <!-- ACCOUNT DETAILS-->
+              <tr>
+                <td style="padding: 0 15px 0 15px;">
+                    <h4
+                    style="
+                      background-color: #5db1db;
+                      text-align: center;
+                      padding: 0.5em;
+                      font-size: 14px;
+                    
+                    "
+                  >
+                  Account Details
+                  </h4>
+                  <p style="padding: 0 15px 0 15px;">Company: [Account: Classification Icon][Account: Name (with link)]</p>
+                  <p style="padding: 0 15px 0 15px;">Contact: [Ticket: Contact]</p>
+                  <p style="padding: 0 15px 0 15px;">Account Manager: [Account: Account Manager]</p>
+                </td>
+                <td><p></p></td>
+              </tr>
+
+
+            
+
+              <!-- TICKET HISTORY-->
 
               <tr>
-                <td style="font-weight: normal" width="100%">
-                  <p style="line-height: 1.5em">
-                    Your service ticket (#[Ticket: Number]) for [Account: Name]
-                    has been waiting for your response for 3 days. If a response
-                    is not received within 3 days of the last update, your
-                    ticket will be marked as complete.
-                  </p>
-                </td>
-              </tr>
-              <!-- line-->
-              <tr>
-                <td><hr style="border-top: 1px solid #22568a" /></td>
-              </tr>
-              <!-- Description-->
-              <tr>
-                <td>
-                  <p><strong> Description: </strong> [Ticket: Description]</p>
-                </td>
-              </tr>
-              <!-- line-->
-              <tr>
-                <td><hr style="border-top: 1px solid #22568a" /></td>
-              </tr>
-              <!-- Latest note-->
-              <tr>
-                <td>
-                  <p>
-                    <strong> Latest Note: </strong>[Ticket Time Entry: Summary
-                    Notes]
-                  </p>
-                </td>
-              </tr>
-              <!-- line-->
-              <tr>
-                <td><hr style="border-top: 1px solid #22568a" /></td>
-              </tr>
-              <!-- body-->
-              <tr>
-                <td width="100%" style="padding-bottom: 12px">
-                  <p>
-                    If you do not have access to the client portal and would
-                    like to use it, please let us know. You can access your
-                    service ticket by clicking the following link:
-                  </p>
-                </td>
-              </tr>
-              <!--button-->
-              <tr>
-                <td style="text-align: center">
-                  <a
-                    href="https://portal.avajen.com/app/service"
-                    class="button"
+                <td style="padding: 0 15px 0 15px;">
+                    <h4
                     style="
-                      color: #ffffff;
-                      background-color: #22568a;
-                      padding: 10px;
-                      border-radius: 5px;
-                      text-decoration: none;
+                      background-color: #5db1db;
+                      text-align: center;
+                      padding: 0.5em;
+                      font-size: 14px;
+                    
                     "
-                    >Client Portal</a
                   >
+                Ticket History
+                  </h4>
+                  <p style="padding: 0 15px 0 15px;">[Ticket: History (with formatting)]</p>
                 </td>
               </tr>
+
+
+
+              <!-- line-->
+
+              <!-- body-->
+
+              <!--button-->
 
               <!-- image footer-->
-            </table>
+             
+       
+
             <tr>
               <td style="padding-top: 24px; padding-bottom: 0">
                 <img
@@ -218,6 +292,9 @@
             </tr>
           </td>
         </tr>
+    </table>
+</table>
+
 
         <!-- footer-->
       </table>
@@ -241,6 +318,8 @@
           </p>
         </td>
       </tr>
+      
+   
     </center>
   </body>
 </html>
