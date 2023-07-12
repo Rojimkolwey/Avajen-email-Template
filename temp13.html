@@ -14,27 +14,25 @@
         supported-color-schemes: light dark;
       }
       @media (prefers-color-scheme: dark) {
-        .light-logo {
+        .light-logo:not([class^="X_"]) {
           display: none !important;
         }
-        [data-ogsc] .light-logo {
-          display: none !important;
-        }
-        .dark-logo {
+
+        .dark-logo:not([class^="X_"]) {
           display: block !important;
         }
-        [data-ogsc] {
-          display: block !important;
-        }
-        .wrapper {
-          background-color: #252628 !important;
+
+        .wrapper:not([class^="X_"]) {
+          background-color: #000000 !important;
           color: #ffffff !important;
         }
-        .main {
-          background-color: #202125 !important;
+        .main:not([class^="X_"]) {
+          background-color: #000000 !important;
           color: #ffffff !important;
         }
-     
+        body:not([class^="X_"]) {
+          background-color: #000000;
+        }
       }
 
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
@@ -81,6 +79,26 @@
         padding: 10px;
         border-radius: 5px;
         text-decoration: none;
+      }
+    </style>
+
+    <style>
+      [data-ogsb] .wrapper {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      [data-ogsb] .main {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      [data-ogsb] body {
+        background-color: #000000;
+      }
+      [data-ogsc] .dark-logo {
+        display: block !important;
+      }
+      [data-ogsc] .light-logo {
+        display: none !important;
       }
     </style>
   </head>

@@ -1,22 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="x-apple-disable-message-reformatting" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Avajen Email</title>
+    <style type="text/css">
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        .light-logo:not([class^="X_"]) {
+          display: none !important;
+        }
+
+        .dark-logo:not([class^="X_"]) {
+          display: block !important;
+        }
+
+        .wrapper:not([class^="X_"]) {
+          background-color: #000000 !important;
+          color: #ffffff !important;
+        }
+        .main:not([class^="X_"]) {
+          background-color: #000000 !important;
+          color: #ffffff !important;
+        }
+        body:not([class^="X_"]) {
+          background-color: #000000;
+        }
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        margin: 0;
+        background-color: #f2f7f2;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+      .wrapper {
+        background-color: #f2f7f2;
+        width: 100%;
+        table-layout: fixed;
+      }
+      .main {
+        background-color: #ffffff;
+        margin: 0 auto;
+        max-width: 600px !important;
+        border-spacing: 0;
+        padding-bottom: 0;
+      }
+      .content {
+        padding: 0 24px;
+        margin: 0;
+      }
+      .content p {
+        padding: 0;
+      }
+      .button {
+        background-color: #22568a;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    </style>
+
+    <style>
+      [data-ogsb] .wrapper {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      [data-ogsb] .main {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      [data-ogsb] body {
+        background-color: #000000;
+      }
+      [data-ogsc] .dark-logo {
+        display: block !important;
+      }
+      [data-ogsc] .light-logo {
+        display: none !important;
+      }
+    </style>
   </head>
-  <body>
-    <table>
-      <tr>
-        <td>
-          <p>her</p>
-          <p>her</p>
-        </td>
-        <td>
-          <p>him</p>
-          <p>her</p>
+
+  <center class="wrapper" style="background-color: #f2f7f2">
+    <table class="main" style="max-width: 600px; margin: 0 auto; background-color: #ffffff">
+      <!-- header-->
+      <tbody><tr>
+        <td align="center">
+          <a href="https://www.avajen.com/">
+            <img class="light-logo" src="https://uploads-ssl.webflow.com/6491658c181cdaa42e3e0675/649182a8d9536cfdac6c72b7_Frame%2012%203.png" width="100%" alt="floating icons">
+            <!--[if !mso]><! -->
+            <div class="dark-logo" style="display: none">
+              <img src="https://uploads-ssl.webflow.com/6491658c181cdaa42e3e0675/6492aaa2379758884a56c166_Frame%2012%203.png" alt="AVAJEN logo" width="100%">
+            </div>
+            <!--<![endif]-->
+          </a>
         </td>
       </tr>
-    </table>
-  </body>
-</html>
+
+      <!-- content-->
+      <!-- heading-->
+      <tr>
+        <td style="padding: 0 15px 0 15px">
+          <table class="content">
+            <tbody><tr>
+              <td width="100%">
+                <p style="font-size: 16px; font-weight: bold">
+                  [Ticket: Account] - [Ticket: Title]
+                </p>
+                <p style="font-size: 12px; font-weight: bold">
+                  TICKET: [Ticket: Number]
+                </p>
+                <p style="font-size: 11px">
+                  <strong>Created on: </strong> [Ticket: Create Date/Time] by
+                  [Ticket: Created By]
+                </p>
+              </td>
+            </tr>
+            <!-- body-->
+
+            <tr>
+              <td style="font-size: 16px; font-weight: bold; color: #197066">
+                <p>Dear [Resource: First Name],</p>
+              </td>
+            </tr>
+            <!-- message-->
+
+            <tr>
+              <td style="font-size: 16px; font-weight: bold" width="100%">
+                <p>
+                  Service ticket (#[Ticket: Number (with link)]) requires an update from you.</p>
+              </td>
+            </tr>
+            <!-- line-->
+            <tr>
+              <td><hr style="border-top: 1px solid #22568a"></td>
+            </tr>
+            <!-- Description-->
+            <tr>
+              <td>
+                <p><strong> Description: </strong> [Ticket: Description]</p>
+              </td>
+            </tr>
+            <!-- line-->
+            <tr>
+              <td><hr style="border-top: 1px solid #22568a"></td>
+            </tr>
+            <!-- Latest note-->
+            <tr>
+              <td>
+                <p>
+                  <strong> Latest Note: </strong>[Ticket Time Entry: Summary
+                  Notes]
+                </p>
+              </td>
+            </tr>
+            <!-- line-->
+            <tr>
+              <td><hr style="border-top: 1px solid #22568a"></td>
+            </tr>
+            <!-- body-->
+            <tr>
+              <td width="100%" style="padding-bottom: 12px">
+              </td>
+            </tr>
+            <!--button-->
+            <tr>
+              <td style="text-align: center">
+              </td>
+            </tr>
+
+            <!-- image footer-->
+          </tbody></table>
+          </td></tr><tr>
+            <td style="padding-top: 24px; padding-bottom: 0">
+              <img src="https://uploads-ssl.webflow.com/6491658c181cdaa42e3e0675/6492ee5cfacf45d0ac7898c2_Frame%201%209.png" alt="" width="100%">
+            </td>
+          </tr>
+        
+      
+
+      <!-- footer-->
+    </tbody></table>
+    
+      
+        <p style="
+            font-size: 12px;
+            color: #65735b;
+            line-height: 1.6;
+            text-align: center;
+          ">
+          12354 Caley Ave Suite 2C, Contennial, CO 80111
+        </p>
+        <p style="font-size: 12px; color: #65735b; text-align: center">
+          info@avajen.com | Main: <a href="tel:18557556444">1-855-755-6444</a> | NOC: <a href="tel:18556676670">1-855-667-6670</a>
+        </p>
+        <p style="font-size: 12px; color: #65735b; text-align: center">
+          © 2023 AVAJEN
+        </p>
+      
+    
+  </center>
+
+
+</span>
